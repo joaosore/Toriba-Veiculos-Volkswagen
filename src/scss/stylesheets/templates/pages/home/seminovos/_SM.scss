@@ -1,0 +1,47 @@
+@media only screen and (max-width: $SM)
+{
+	.seminovos {
+		.box-cabecalho {
+			text-align: center;
+		}
+		.owl-carousel-seminovos {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding: 0;
+			.owl-item {
+				.thumbnail-car {
+					.box-img {
+						background: transparent;
+					}
+				}
+			}
+			.owl-nav {
+			    button {
+			    	&.owl-prev,
+				   	&.owl-next {
+				   		height: 26px;
+						width: 26px;
+					}
+					&.owl-prev {
+						left: 15px;
+					}
+					&.owl-next {
+						right: 15px;
+					}
+			    }
+			}
+			.owl-dots {
+			    bottom: 35px;
+			}
+		}
+	}
+
+	@media (orientation: landscape)
+	{
+
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

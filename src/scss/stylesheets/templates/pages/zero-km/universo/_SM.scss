@@ -1,0 +1,21 @@
+@media only screen and (max-width: $SM)
+{
+	.universo {
+		padding-top: 90px;
+		.box-cabecalho {
+			padding-top: 66px;
+		}
+		.box-car {
+			padding-top: 35px;
+			padding-bottom: 35px;
+		}
+	}
+	@media (orientation: landscape)
+	{
+
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

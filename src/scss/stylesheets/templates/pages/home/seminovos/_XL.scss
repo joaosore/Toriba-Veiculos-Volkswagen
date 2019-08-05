@@ -1,0 +1,182 @@
+.seminovos {
+	background-color: $Brand_1;
+	background-image: url('../imgs/bg-seminovos.png');
+	padding-top: 115px;
+    padding-bottom: 115px;
+    .box-cabecalho {
+    	h2 {
+    		color: $NeutralLight_1;
+    		font-weight: bold;
+    	}
+    	p {
+    		font-size: 1em;
+    		color: $NeutralLight_1;
+    	}
+    }
+    .owl-carousel-seminovos {
+		max-width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	    position: static;
+		.owl-nav {
+			width: 100%;
+			position: absolute;
+			height: 45px;
+			pointer-events: none;
+			left: 0;
+			button {
+	    	    pointer-events: all;
+		    	&.owl-prev,
+			   	&.owl-next {
+			   		height: 45px;
+					width: 45px;
+					position: absolute;
+					background-color: $NeutralLight_1;
+					-webkit-mask-image: url('../imgs/seta.svg');
+					mask-image: url('../imgs/seta.svg');
+					position: absolute;
+					-webkit-mask-size: 100%;
+					top: 0;
+					transition: all 350ms ease-out;
+					&:hover {
+					    top: -5px;
+					}
+					span {
+						display: none;
+					}
+			   	}
+				&.owl-prev {
+					left: 5%;
+				}
+				&.owl-next {
+					right: 5%;
+					transform: rotate(180deg);
+				}
+		    }
+		}
+		.owl-dots {
+			height: 50px;
+			width: 100%;
+			bottom: -100px;
+			left: 0;
+			.owl-dot {
+				background-color: $NeutralLight_1;
+			}
+		}
+    }
+    .box-card {
+    	background-color: #FFFFFF;
+    	&:hover {
+    		.thumbnail-car {
+	    		.box-text {
+	    			opacity: 1;
+	    		}
+	    	}
+	    	.descricao {
+	    		h4 {
+	    			&.modelo {
+		    			color: $Brand_2;
+		    		}
+	    		}
+	    	}
+    	}
+    	.descricao {
+    		padding: 15px 30px;
+    		h4 {
+	    		font-weight: bold;
+	    		margin: 0;
+	    		height: 1.25em;
+	    		overflow: hidden;
+	    		&.modelo {
+	    			transition: all 350ms ease-out; 
+	    			color: $NeutralDark_1;
+	    		}
+	    		&.valor {
+	    			color: $Brand_2;
+	    		}
+	    	}
+    	}
+    	.thumbnail-car {
+			width: 100%;
+			position: relative;
+			&:before {
+				content: "";
+				display: block;
+				padding-top: calc(100% - 100px);
+			}
+			.box-img {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: #F0F0F0;
+				bottom: 0;
+				left: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+				&:before {
+					background-color: #000;
+					content: ' ';
+					display: block;
+					height: 100%;
+					opacity: 0;
+					position: absolute;
+					width: 100%;
+					z-index: 1;
+				}
+				picture {
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					img {
+					    width: 100%;
+				        height: 100%;
+				        object-fit: cover;
+					}
+				}
+			}
+			.box-text {
+			    z-index: 5;
+				opacity: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				align-items: center;
+				justify-content: center;
+				transition: all 350ms ease-out;
+				.bg {
+					background-color: $Brand_1;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					opacity: 0.9;
+				}
+				p {
+					font-size: 0.75em;
+					color: $NeutralLight_1;
+					z-index: 1;
+					padding: 30px;
+					text-align: center;
+				}
+				.box-btn {
+					height: 100%;
+					width: 100%;
+					position: absolute;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+			.button-2 {
+				&:hover {
+					span {
+						color: $Brand_1;
+					}
+				}
+			}
+		}
+    }
+}

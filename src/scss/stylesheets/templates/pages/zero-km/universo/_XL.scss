@@ -1,0 +1,23 @@
+.universo {
+    overflow: hidden;
+	padding-top: 109px;
+	.box-cabecalho {
+		padding-top: 135px;
+	}
+	.box-car {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding-top: 75px;
+		padding-bottom: 75px;
+		p {
+			min-height: 20px;
+			&.title {
+				color: $NeutralDark_1;
+				font-weight: bold;
+				font-size: 1.25em;
+			}
+		}
+	}
+}

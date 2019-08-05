@@ -1,0 +1,44 @@
+.loading {
+	position: fixed;
+	width: 100%;
+	height: calc(100% - 64px);
+	top: 64px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #FFF;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.loading-componets {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+	z-index: 5;
+	position: relative;
+	top: 0;
+	height: 100%;
+}
+
+form {
+	.loading {
+		position: relative;
+		width: 55px;
+		height: 55px;
+	    top: 25px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: transparent;
+	    pointer-events: none;
+	    z-index: 10;
+        margin: auto;
+	    svg {
+	    	circle {
+    		    stroke: #FFF;
+	    	}
+	    }
+	}
+}

@@ -1,0 +1,22 @@
+@media only screen and (max-width: $LG)
+{
+	header {
+		.navbar-expand-lg {
+			.navbar-nav {
+				.nav-link {
+					padding-right: 1em;
+					padding-left: 1em;
+				}
+			}
+		}
+	}
+
+	@media (orientation: landscape)
+	{
+
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

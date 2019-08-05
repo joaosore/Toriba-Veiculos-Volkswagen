@@ -1,0 +1,221 @@
+@media only screen and (max-width: $SM)
+{
+	.filtros {
+		position: fixed;
+		top: 0;
+		z-index: 50;
+		padding-top: 50px;
+		background-color: #0266B3;
+	    width: 100%;
+	    transform: translateX(100%);
+	    transition: all 350ms ease-out;
+        height: 100vh;
+		overflow-y: scroll;
+	    &.open {
+	    	transform: translateX(0);
+	    }
+	    .header-menu {
+			padding: 0 20px;
+			position: absolute;
+			top: 0;
+			height: 50px;
+			width: 100%;
+		    box-shadow: 0 6px 6px 0 rgba(0,0,0,.12);
+			.filter-close {
+				display: flex;
+				align-items: center;
+				width: 50%;
+				.btn-close {
+					object {
+				   		pointer-events: none;
+					}
+				}
+			}
+			.filter-clear {
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				width: 50%;
+				span {
+					color: #FFF;
+					font-size: 1em;
+				}
+			}
+	    }
+		.box-fintro-simples {
+		    background-color: #0266B3;
+		    box-shadow: none;
+		}
+		.box-ano {
+	    	flex-direction: column;
+		}
+		.nome-campo {
+			margin: 15px -30px;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			span {
+				z-index: 1;
+				background-color: #0266b3;
+				color: #FFF;
+			}
+			.line {
+				background-color: #047EDB;
+				width: 100%;
+				height: 1px;
+				position: absolute;
+			}
+		}
+		.select {
+			&:after {
+				background-color: #FFF;
+			}
+			select {
+				color: #FFF;
+				border: 1px solid #FFF;
+				text-align-last: center;
+				padding: .375em;
+				height: 2.5em;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				vertical-align: middle;
+				&:focus {
+					color: #FFF;
+					border: 1px solid #FFF;
+				}
+			}
+		}
+		.box-fintro-complexo {
+			background-color: #0266b3;
+			max-height: 0;
+			overflow: hidden;
+			box-shadow: none;
+			padding: 0;
+			&.show {
+				max-height: 5000px;
+			}
+			.btns-refine {
+				border: none;
+			}
+			.option {
+				position: relative;
+				.box-option {
+					top: 0;
+					background-color: transparent;
+					box-shadow: none;
+				    max-height: 5000px;
+				    position: relative;
+				    .componet {
+				    	padding: 0;
+				    	.btns-up-down {
+				    		.down,
+				    		.up {
+				    			background-color: #FFF;
+				    		}
+				    		.num,
+				    		.text {
+				    			color: #FFF;
+				    		}
+				    	}
+				    	.btns-range {
+				    		&.scroll {
+				    			height: auto;
+				    			overflow: auto;
+				    		}
+				    		.back-bar {
+				    			.selected-bar {
+				    				background-color: #FFF !important;
+				    			}
+				    			.pointer {
+				    				&.low,
+				    				&.high {
+				    					background-color: #FFF !important;
+				    				}
+				    			}
+				    		}
+				    		.box-opcionais {
+				    			.item {
+				    				.container-input {
+				    					color: #FFF;
+				    				}
+				    			}
+				    		}
+				    	}
+				    	.btns-checkbox {
+				    		.box-checkbox {
+				    			&.color {
+				    				.checkmark {
+				    				    margin: auto;
+				    				}
+				    			}
+				    			span {
+				    				color: #FFF;
+				    			}
+				    		}
+				    	}
+				    }
+				    .buttons {
+				    	display: none;
+				    }
+				    .btns-range {
+				    	span {
+				    		color: #FFF;
+				    	}
+				    }
+				}
+			}
+			.checkmark {
+			    border: 1px solid #FFF;
+			}
+			.container-input input:checked~.checkmark {
+				background-color: #FFF;
+				border: 1px solid #FFF;
+			}
+		}
+		.mais-filtros {
+			color: #FFF;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			flex-direction: column;
+		    margin-bottom: 15px;
+			.seta {
+				height: 15px;
+				width: 15px;
+				background-color: $NeutralLight_1;
+				-webkit-mask-image: url('../imgs/seta-filtros.svg');
+				mask-image: url('../imgs/seta-filtros.svg');
+				position: relative;
+				-webkit-mask-size: 100%;
+				top: 0;
+				left: 0;
+				transition: all .35s ease-out;
+				-webkit-mask-repeat: no-repeat;
+				-webkit-mask-position: center;
+			}
+		}
+		.btns-mobile {
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+
+	}
+	.box-button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 25px 0;
+	}
+	@media (orientation: landscape)
+	{
+
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

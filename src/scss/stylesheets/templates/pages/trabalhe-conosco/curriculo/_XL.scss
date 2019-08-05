@@ -1,0 +1,49 @@
+.curriculo {
+	padding-top: 100px;
+	padding-bottom: 80px;
+	.loading {
+	    top: 5px;
+		svg {
+			circle {
+				stroke: $Brand_1;
+			}
+		}
+	}
+	.box-voltar {
+		display: none;
+		.voltar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	.btn-upload {
+		.btn-click {
+			position: relative;
+			height: 3em;
+			padding-left: 1.5em;
+			display: flex;
+			align-items: center;		
+			&:before {
+				content: " ";
+				height: 100%;
+				width: 15px;
+				background-color: $NeutralLight_1;
+				-webkit-mask-image: url('../imgs/curriculo.svg');
+				mask-image: url('../imgs/curriculo.svg');
+				position: absolute;
+				-webkit-mask-size: 100%;
+				top: 0;
+				left: 0;
+				transition: all .35s ease-out;
+				-webkit-mask-repeat: no-repeat;
+				-webkit-mask-position: center;
+			}
+		}
+		input {
+			width: 0;
+			height: 0;
+		}
+	}
+}

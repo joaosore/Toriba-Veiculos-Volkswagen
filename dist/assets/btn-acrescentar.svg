@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43" height="35" viewBox="0 0 43 35">
+  <g id="Group_2846" data-name="Group 2846" transform="translate(-670 -677)">
+    <text id="_" data-name="+" transform="translate(686 700)" fill="#047edb" font-size="20" font-family="VWHead, VW Head"><tspan x="0" y="0">+</tspan></text>
+    <g id="Rectangle_146" data-name="Rectangle 146" transform="translate(670 677)" fill="none" stroke="#047edb" stroke-width="3">
+      <rect width="43" height="35" rx="8" stroke="none"/>
+      <rect x="1.5" y="1.5" width="40" height="32" rx="6.5" fill="none"/>
+    </g>
+  </g>
+</svg>

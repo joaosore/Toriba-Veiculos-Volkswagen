@@ -1,0 +1,20 @@
+@media only screen and (max-width: $MD)
+{
+	.seminovos {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	 	.owl-carousel-seminovos {
+			max-width: 80%;
+			margin-left: 10%;
+			margin-right: 10%;
+		}
+	}
+	@media (orientation: landscape)
+	{
+		
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

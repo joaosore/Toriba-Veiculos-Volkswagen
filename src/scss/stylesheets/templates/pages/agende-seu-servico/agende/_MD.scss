@@ -1,0 +1,29 @@
+@media only screen and (max-width: $MD)
+{
+	.agende {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	    overflow: hidden;
+		h2,
+		p {
+			text-align: center;
+		}
+		.box-numeros {
+		    align-items: center;
+			.telefone {
+			    font-size: 1.5rem;
+			}
+			.whatsapp {
+			    font-size: 1.5rem;
+			}
+		}
+	}
+	@media (orientation: landscape)
+	{
+		
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

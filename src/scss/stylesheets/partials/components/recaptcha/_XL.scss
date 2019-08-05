@@ -1,0 +1,7 @@
+.grecaptcha-badge {
+	transform: translateX(100%);
+	transition: all 350ms ease-out;
+	&.ativo {
+		transform: translateX(0);
+	}
+}

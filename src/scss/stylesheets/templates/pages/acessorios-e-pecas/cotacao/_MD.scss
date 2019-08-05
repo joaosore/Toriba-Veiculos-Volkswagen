@@ -1,0 +1,19 @@
+@media only screen and (max-width: $MD)
+{
+	.cotacao {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		.box-servicos {
+			p {
+			}
+		}
+	}
+	@media (orientation: landscape)
+	{
+		
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

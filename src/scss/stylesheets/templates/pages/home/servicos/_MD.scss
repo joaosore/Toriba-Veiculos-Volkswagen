@@ -1,0 +1,44 @@
+@media only screen and (max-width: $MD)
+{
+	.servicos {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		.box-max-width {
+		    max-width: 100%;
+			.card-custom {
+			    padding: 15px 0;
+				.box-intern {
+					.box-mold {
+						picture {
+						}
+						.mask {
+						}
+						.mask_hover {
+							&.active {
+							}
+						}
+						.conteudo {
+						    height: 30px;
+							h2 {
+						    	margin: 0;
+							}
+							p {
+							    margin: 0;
+							}
+							.box-btn {
+							}
+						}
+					}
+				}	
+			}
+		}
+	}
+	@media (orientation: landscape)
+	{
+		
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

@@ -1,0 +1,156 @@
+.contato {
+	background-color: $NeutralLight_2;
+	padding-top: 125px;
+	padding-bottom: 150px;
+	.box-cabecalho {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		h2 {
+			font-weight: bold;
+			color: $Brand_1;
+		}
+		p {
+			font-size: 1em;
+			color: $NeutralDark_1;
+		}
+	}
+	.tipos-contaos {
+		.tipo {
+		    padding: 15px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-top: 1px solid $NeutralDark_2;
+			&:last-child {
+				border-bottom: 1px solid $NeutralDark_2;
+			}
+			img {
+			    padding: 0 2.25em;
+			}
+			p {
+				width: 8.0625em;
+				font-size: 1.25em;
+			}
+		}
+	}
+	.box-contato {
+		background-color: $NeutralLight_1;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	    justify-content: space-evenly;
+		flex-direction: column;
+		.unidade {
+		    margin: 0;
+			color: $NeutralDark_2;
+		}
+		h2 {
+		    margin: 0;
+		}
+		.endereco {
+			color: $Brand_1;
+			font-size: 0.75em;
+			max-width: 70%;
+			position: relative;
+		    padding-left: calc(.75rem * 1.5);
+            margin-bottom: 0;
+			&:before {
+				content: " ";
+				position: absolute;
+				left: 0;
+				width: 0.75rem;
+				height: 0.75rem;
+				background-color: $Brand_2;
+				-webkit-mask-image: url('../imgs/maps.svg');
+				mask-image: url('../imgs/maps.svg');
+			    -webkit-mask-size: 100% 100%;
+			}
+		}
+		.phones {
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			flex-direction: column;
+			.box-horaios {
+				position: relative;
+				padding-left: calc(1rem * 1.5);
+			    margin: .25em;
+				&:before {
+					content: " ";
+					position: absolute;
+					left: 0;
+					width: 1rem;
+	    			height: 100%;
+					background-color: $Brand_2;
+					-webkit-mask-image: url('../imgs/horario.svg');
+					mask-image: url('../imgs/horario.svg');
+					-webkit-mask-repeat: no-repeat;
+					-webkit-mask-position: center .7rem;
+				}
+			}
+		}
+		.tel {
+			position: relative;
+		    padding-left: calc(1rem * 1.5);
+		    margin: .25em;
+		    color: $NeutralDark_1;
+			&:before {
+				content: " ";
+				position: absolute;
+				left: 0;
+				width: 1rem;
+    			height: 100%;
+				background-color: $Brand_2;
+				-webkit-mask-image: url('../imgs/telefone.svg');
+				mask-image: url('../imgs/telefone.svg');
+				-webkit-mask-repeat: no-repeat;
+				-webkit-mask-position: center;
+			}
+		}
+		.whats {
+			position: relative;
+		    padding-left: calc(1rem * 1.5);
+		    margin: .25em;
+		    color: $NeutralDark_1;
+			&:before {
+				content: " ";
+				position: absolute;
+				left: 0;
+				width: 1rem;
+    			height: 100%;
+				background-color: $Brand_2;
+				-webkit-mask-image: url('../imgs/whatsapp.svg');
+				mask-image: url('../imgs/whatsapp.svg');
+				-webkit-mask-repeat: no-repeat;
+				-webkit-mask-position: center;
+			}
+		}
+		.box-horaios {
+			font-size: 0.75em;
+		}
+		.btns {
+			width: 100%;
+			position: relative;
+			padding: 7.5px 45px;
+			.button-1-inverse,
+			.button-1 {
+				max-width: 100%
+			}
+		}
+		.box-1 {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.box-2 {
+		    display: flex;
+		}
+		.box-3 {
+		}
+		
+	}
+}

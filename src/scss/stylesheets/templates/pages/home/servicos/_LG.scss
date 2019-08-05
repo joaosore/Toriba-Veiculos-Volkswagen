@@ -1,0 +1,38 @@
+@media only screen and (max-width: $LG)
+{
+	.servicos {
+		.box-max-width {
+			.card-custom {
+				.box-intern {
+					.box-mold {
+						picture {
+						}
+						.mask {
+						}
+						.mask_hover {
+							&.active {
+							}
+						}
+						.conteudo {
+							h2 {
+								font-size: 2em;
+							}
+							p {
+							}
+							.box-btn {
+							}
+						}
+					}
+				}	
+			}
+		}
+	}
+	@media (orientation: landscape)
+	{
+
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

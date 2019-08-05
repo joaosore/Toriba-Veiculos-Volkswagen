@@ -1,0 +1,210 @@
+@media only screen and (max-width: $MD)
+{
+	.carros {
+		padding: 0;
+		.box-car {
+			height: auto;
+		    flex-direction: column;
+			.img {
+				max-width: 90%;
+				height: 100%;
+			}
+			.ano_marca_modelo {
+				h3 {
+					font-style: 1.66rem;
+				}
+			}
+			.box-dados {
+			    padding: 0;
+		        width: 100%;
+			    .dados {
+					max-width: 400px;
+					margin: auto;
+					padding: 50px 0;
+					align-items: center;
+					justify-content: center;
+					width: auto;
+					.ano {
+				   		margin-bottom: 15px;
+					}
+
+					.km {
+					    margin-bottom: 15px;
+						span {
+						    margin-left: 15px;
+						}
+					}
+
+					.cor {
+						margin-bottom: 15px;
+					}
+
+					.cambio {
+						span {
+						    margin-left: 15px;
+						}
+					}
+				}
+			}
+			.box-btns-valor {
+				.valor {
+					font-size: 2em;
+					font-weight: bold;
+					color: $Brand_1;
+					text-align: center;
+					margin-bottom: 15px;
+				}
+				.btns {
+				    display: flex;
+				    flex-direction: row;
+				    a {
+				    	&:first-child {
+			    			margin-right: 15px;
+			    			margin-bottom: 0;
+				    	}
+				    }
+				}
+			}
+		}
+		.pagination {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		    padding: 50px 0;
+			.seta {
+				cursor: pointer;
+				margin: 0 15px;
+				position: relative;
+				display: inline-block;
+				height: 2rem;
+				width: 2rem;
+				background-color: $Brand_1;
+				-webkit-mask-repeat: no-repeat;
+				-webkit-mask-position: center;
+				-webkit-mask-size: 100%;
+				-webkit-mask-image: url('../imgs/seta-pagination.svg');
+				mask-image: url('../imgs/seta-pagination.svg');
+				&.right {
+			    	transform: rotateZ(180deg);
+				}
+				&.disable {
+					background-color: #B5B5B5;
+					pointer-events: none;
+				}
+			}
+			.itens {
+			    display: flex;
+				a {
+					cursor: pointer;
+					width: 2rem;
+					height: 2rem;
+					border-radius: 100%;
+					background-color: transparent;
+					color: #B5B5B5;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-weight: bold;
+				    margin: 0 5px;
+				    &.active {
+						background-color: $Brand_1;
+						color: #fff;
+				    }
+				}
+				span {
+					display: flex;
+					align-items: center;
+					color: #B5B5B5;
+					font-weight: bold;
+				}
+			}
+		}
+		.lista-filtros {
+			background-color: #F0F0F0;
+			width: 100%;
+			max-height: 650px;
+			box-shadow: 0 2px 7px rgba(0, 0, 0, 0.16);
+			padding: 15px;
+			h4 {
+				font-size: 1.125em;
+				color: #0266B3;
+				font-weight: bold;
+			}
+			span {
+				&.link {
+					padding-top: 30px;
+					padding-bottom: 30px;
+					font-size: 1.125em;
+					color: #0266B3;
+					text-decoration: underline;
+				    display: block;
+				}
+			}
+			.box-lista {
+				display: flex;
+				flex-wrap: wrap;
+				span {
+					cursor: pointer;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border: 1px solid #0266b3;
+					border-radius: 25px;
+					color: #0266b3;
+					padding: 5px 0 5px 10px;
+				    margin: 5px;
+				    font-weight: bold;
+					&:after {
+						content: "+";
+						width: 25px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						transform: rotateZ(45deg);
+						font-size: 1em;
+						color: #0266B3;
+						font-weight: bold;
+					}
+				}
+				&.scroll {
+					width: 100%;
+					max-height: 325px;
+					overflow-y: scroll;
+
+					/* width */
+					&::-webkit-scrollbar {
+						width: 8px;
+					}
+
+					/* Track */
+					&::-webkit-scrollbar-track {
+						background: #C1BEBE; 
+						border-radius: 5px;
+					}
+
+					/* Handle */
+					&::-webkit-scrollbar-thumb {
+						background: #047EDB; 
+						border-radius: 5px;
+					}
+
+					/* Handle on hover */
+					&::-webkit-scrollbar-thumb:hover {
+						background: #0266B3; 
+						border-radius: 5px;
+					}
+
+				}
+			}
+		}
+	}
+
+	@media (orientation: landscape)
+	{
+		
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

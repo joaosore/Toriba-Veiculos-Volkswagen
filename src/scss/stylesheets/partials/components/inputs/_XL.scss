@@ -1,0 +1,177 @@
+.inputs-1, {
+	background-color: transparent;
+	border: 0;
+	border-bottom: 1px solid $NeutralLight_1;
+	border-radius: 0;
+	color: $NeutralLight_1;
+	&:focus {
+		background-color: transparent;
+		border: 0;
+		border-bottom: 1px solid $NeutralLight_1;
+		box-shadow: none;
+		color: $NeutralLight_1;
+	}
+	&::placeholder {
+		color: $NeutralLight_1;
+		opacity: 1;
+	}
+	&.error {
+		border-bottom: 1px solid $error;
+	}
+	&.valid {
+		border-bottom: 1px solid $success;
+	}
+}
+
+.select {
+	position: relative;
+    margin-bottom: 3rem;
+	select {
+		-webkit-appearance: none;
+		-webkit-border-radius: 0px;
+		background-color: transparent;
+		border: 0;
+		border-bottom: 1px solid $NeutralLight_1;
+		border-radius: 0;
+		color: $NeutralLight_1;
+		&:focus {
+			background-color: transparent;
+			border: 0;
+			border-bottom: 1px solid $NeutralLight_1;
+			box-shadow: none;
+			color: $NeutralLight_1;
+		}
+		&.error {
+			border-bottom: 1px solid $error;
+		}
+		&.valid {
+			border-bottom: 1px solid $success;
+		}
+	}
+	&.segunda-cor {
+		&:after {
+			background-color: $Brand_1;
+		}
+	}
+	&:after {
+		content: "";
+		width: 11px;
+		height: 8px;
+		position: absolute;
+		top: calc(50% - 4px);
+		right: 15px;
+		background-color: #FFF;
+		-webkit-mask-image: url('../imgs/seta-select.svg');
+		mask-image: url('../imgs/seta-select.svg');
+	}
+}
+
+textarea
+{
+	&.form-control {
+		color: $NeutralLight_1;
+		border: 1px solid $NeutralLight_1;
+		border-radius: 15px;
+		padding-left: 10px;
+		padding-right: 10px;
+		resize: none;
+		padding-top: 7px;
+		margin-bottom: 23px;
+	    background-color: transparent;
+	    &::placeholder {
+	    	color: $NeutralLight_1;
+	    }
+	    &:focus {
+			background-color: transparent;
+			border: 1px solid $NeutralLight_1;
+			box-shadow: none;
+			color: $NeutralLight_1;
+		}
+		&.error {
+			border: 1px solid $error;
+		}
+		&.valid {
+			border: 1px solid $success;
+		}
+	}
+}
+
+label {
+	&.error {
+		pointer-events: none;
+		display: inline-block;
+		margin-bottom: 0;
+		position: absolute;
+		padding-left: 10px;
+		color: $error;
+		right: 20px;
+		bottom: 0px;
+	}
+	&#mensagem-error {
+		bottom: 0px;
+	}
+}
+
+/* The container-input */
+.container-input {
+	position: relative;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+}
+
+/* Hide the browser's default checkbox */
+.container-input input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+	height: 17px;
+	width: 17px;
+	background-color: transparent;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #707070;
+	border-radius: 3px;
+	transition: all 350ms ease-out;
+	margin-right: 10px;
+}
+
+/* On mouse-over, add a grey background color */
+.container-input:hover input ~ .checkmark {
+	background-color: #707070;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-input input:checked ~ .checkmark {
+	background-color: #047EDB;
+	border: 1px solid #047EDB;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.container-input input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.disable-checkbox {
+	opacity: 0.3;
+	pointer-events: none;
+}

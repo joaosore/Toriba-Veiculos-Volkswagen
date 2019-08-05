@@ -1,0 +1,27 @@
+@media only screen and (max-width: 1392px)
+{
+	.carros {
+		padding-top: 0;
+		.box-car {
+			.box-btns-valor {
+				.valor {
+					font-size: 2em;
+					font-weight: bold;
+					color: $Brand_1;
+					text-align: center;
+					margin-bottom: 15px;
+				}
+				.btns {
+				    display: flex;
+				    flex-direction: column;
+				    a {
+				    	&:first-child {
+			    			margin-right: 0;
+			    			margin-bottom: 15px;
+				    	}
+				    }
+				}
+			}
+		}
+	}
+}

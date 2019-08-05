@@ -1,0 +1,58 @@
+@media only screen and (max-width: $MD)
+{
+	#box-form {
+		position: fixed;
+		width: 100%;
+		background-color: $Brand_1;
+		left: 0;
+		height: calc(100% - 57px);
+		top: 57px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+		transition: all .35s ease-out;
+		transform: translateX(100%);
+		border-radius: 0;
+		z-index: 10;
+		&.open {
+		    overflow-y: scroll;
+		    transform: translateX(0);
+		}
+		form {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			position: relative;
+		    .form-group {
+		    	position: relative;
+				width: 100%;
+		    	&:nth-child(5){
+	    		    margin-bottom: 2rem;
+		    	}
+		    }
+		}
+		.box-btns {
+			display: none !important;
+		}
+		.btn-close {
+			display: none !important;
+		}
+		@media only screen and (max-height: 630px)
+		{
+			#formulario-flutuante {
+				top: 100px;
+			}
+		}
+
+	}
+	@media (orientation: landscape)
+	{
+		
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

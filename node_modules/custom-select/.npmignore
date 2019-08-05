@@ -1,0 +1,16 @@
+node_modules/
+build/
+
+###### Mac OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+##### node.js
+# Logs
+logs
+*.log

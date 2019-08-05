@@ -1,0 +1,21 @@
+.compra {
+    padding-top: 209px;
+	padding-bottom: 80px;
+	overflow: hidden;
+	.loading {
+	    top: 5px;
+		svg {
+			circle {
+				stroke: $Brand_1;
+			}
+		}
+	}
+	.box-voltar {
+		display: none;
+		.voltar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+@media only screen and (max-width: $LG)
+{
+	.loading {
+		height: calc(100% - 58px);
+		top: 58px;
+	}
+	@media (orientation: landscape)
+	{
+
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

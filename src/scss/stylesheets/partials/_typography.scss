@@ -1,0 +1,25 @@
+//Home
+@import "typography/XL";
+@import "typography/LG";
+@import "typography/MD";
+@import "typography/SM";
+@import "typography/XS";
+
+
+.no-margin {
+	margin: 0!important;
+}
+
+.no-padding {
+	padding: 0!important;
+}
+
+h1 {
+	font-size: rem(72);
+	line-height: em(88);
+}
+
+h2 {
+	font-weight: 700;
+	color: $Brand_1;
+}

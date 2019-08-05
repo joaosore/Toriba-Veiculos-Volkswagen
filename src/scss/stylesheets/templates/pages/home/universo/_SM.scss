@@ -1,0 +1,47 @@
+@media only screen and (max-width: $SM)
+{
+	.universo {
+		.box-cabecalho {
+			 align-items: center;
+		}
+		.owl-carousel-universo {
+			padding-top: 35px;
+			padding-bottom: 125px;
+			.owl-item {
+				.thumbnail-car {
+					.box-img {
+						background: transparent;
+					}
+				}
+			}
+			.owl-nav {
+				top: calc(50% - 105px);
+			    button {
+			    	&.owl-prev,
+				   	&.owl-next {
+				   		height: 26px;
+						width: 26px;
+					}
+					&.owl-prev {
+						left: 15px;
+					}
+					&.owl-next {
+						right: 15px;
+					}
+			    }
+			}
+			.owl-dots {
+			    bottom: 35px;
+			}
+		}
+	}
+
+	@media (orientation: landscape)
+	{
+
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

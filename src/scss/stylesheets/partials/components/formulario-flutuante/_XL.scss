@@ -1,0 +1,142 @@
+#box-form {
+	position: fixed;
+	width: 375px;
+	right: 0;
+	background-color: $Brand_1;
+	padding: 50px 15px;
+	border-radius: 21px;
+	top: calc(50vh - 240px);
+	padding-bottom: 0;
+	transition: all 350ms ease-out;
+	transform: translateX(calc(100%));
+	z-index: 10;
+	&.open {
+		transform: translateX(0);
+	}
+	.form-scroll {
+	    width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#formulario-flutuante {
+		position: relative;
+		overflow: hidden;
+		padding-bottom: 75px;
+		width: 100%;
+		max-width: 350px;
+	}
+    @media only screen and (max-height: 630px)
+	{
+		top: 75px;
+		height: calc(100% - 90px);
+	    padding: 25px 15px;
+        padding-bottom: 0;
+	    .form-scroll {
+	    	overflow-y: scroll;
+	    	height: 100%;
+	    }
+	}
+    .form-group {
+    	position: relative;
+    }
+    .box-btns {
+		position: absolute;
+		background-color: $Brand_2;
+		left: -6.5625em;
+		top: 130px;
+		border-radius: 25px;
+		padding: 1em 2em;
+		height: 45px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transform: rotateZ(90deg);
+		transition: all 350ms ease-out;
+		cursor: pointer;
+		&:hover {
+			background-color: $Brand_1;
+		}
+		&.open-close {
+			position: absolute;
+			left: -17px;
+			top: -18px;
+			padding: 0;
+			width: 45px;	
+			height: 45px;
+			.btn-mensagem {
+				span {
+					font-size: 0;
+				}
+		    }
+			.btn-close {
+				width: 45px;	
+				height: 45px;
+				pointer-events: all;
+				transition: all 250ms 350ms ease-out;
+			}
+		}
+    	.btn-mensagem {
+			span {
+				color: #FFF;
+				font-weight: 900;
+				font-size: 1.25em;
+				transition: font-size 250ms ease-out;
+			}
+	    }
+	    .btn-close {
+	    	width: 0;	
+			height: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			pointer-events: none;
+			cursor: pointer;
+			overflow: hidden;
+			transition: all 350ms ease-out;
+			object {
+				pointer-events: none;
+			}
+	    }
+    }
+    .button-2-inverse {
+        border: 3px solid $NeutralLight_1;
+        color: $Brand_1;
+        font-weight: 700;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: all .35s ease-out;
+        display: inline-flex;
+        background-color: $NeutralLight_1;
+        cursor: pointer;
+        &:hover {
+            background-color: transparent;
+            color: $NeutralLight_1;
+        }
+        &:active {
+            background-color: transparent;
+        }
+        span {
+            padding: 1.292em 3.771em;
+            text-transform: uppercase;
+        }
+        @media only screen and (min-width: $MD)
+        {
+            &.form-flutuante {
+                border-radius: 100%;
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                bottom: -65px;
+                left: 122.5px;
+                span {
+                    padding: 0;
+                    padding: .3em 0 3em;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@media only screen and (max-width: $MD)
+{
+	.contato {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		.box-contato-p {
+		    padding: 15px;
+		    .box-contato {
+		    	padding: 45px 0;
+		    	.box-2 {
+	    		    padding: 15px 0;
+		    	}
+		    }
+		}
+	}
+	@media (orientation: landscape)
+	{
+		
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

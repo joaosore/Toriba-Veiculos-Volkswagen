@@ -1,0 +1,132 @@
+// Button Styles
+.btns-a {
+    &:hover {
+        text-decoration: none;
+    }
+    .button-1 {
+        border: 3px solid $Brand_1;
+        color: $Brand_1;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        min-width: 155px;
+        max-width: 190px;
+        max-height: 48px;
+        border-radius: 8px;
+        transition: all 350ms ease-out;
+        &:hover {
+            background-color: $Brand_2;
+            color: $NeutralLight_1;
+        }
+        &:active {
+            background-color: $Brand_1;
+            color: $NeutralLight_1;
+        }
+        span {
+            padding: .75em 1.25em;
+        }
+        @media only screen and (max-width: $SM)
+        {
+            margin: auto;
+        }
+    }
+
+    .button-1-inverse {
+        border: 3px solid $Brand_1;
+        background-color: $Brand_1;
+        color: $NeutralLight_1;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        min-width: 155px;
+        max-width: 190px;
+        max-height: 48px;
+        border-radius: 8px;
+        transition: all 350ms ease-out;
+        &:hover {
+            border: 3px solid $Brand_2;
+            background-color: $Brand_2;
+        }
+        &:active {
+            border: 3px solid $Brand_1;
+            color: $Brand_1;
+            background-color: transparent;
+        }
+        span {
+            padding: .75em 1.25em;
+        }
+    }
+
+    .button-2 {
+        border: 3px solid $NeutralLight_1;
+        color: $NeutralLight_1;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        min-width: 155px;
+        max-width: 190px;
+        max-height: 48px;
+        border-radius: 8px;
+        transition: all 350ms ease-out;
+        background-color: transparent;
+        &:hover {
+            background-color: $NeutralLight_1;
+            color: $NeutralDark_1;
+        }
+        &:active {
+            background-color: $NeutralLight_1;
+            color: $NeutralDark_1;
+        }
+        span {
+            padding: .75em 1.25em;
+        }
+    }
+
+    .button-2-inverse {
+        border: 3px solid $NeutralLight_1;
+        color: $Brand_1;
+        font-weight: 700;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: all .35s ease-out;
+        display: inline-flex;
+        background-color: $NeutralLight_1;
+        cursor: pointer;
+        &:hover {
+            background-color: transparent;
+            color: $NeutralLight_1;
+        }
+        &:active {
+            background-color: transparent;
+        }
+        span {
+            padding: 1.292em 3.771em;
+            text-transform: uppercase;
+        }
+        @media only screen and (min-width: $MD)
+        {
+            &.form-flutuante {
+                border-radius: 100%;
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                bottom: -65px;
+                left: 122.5px;
+                span {
+                    padding: 0;
+                    padding: .3em 0 3em;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+

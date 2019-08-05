@@ -1,0 +1,14 @@
+@media only screen and (max-width: $SM)
+{
+	h2 {
+		margin-top: 1em; 
+	}
+	@media (orientation: landscape)
+	{
+
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

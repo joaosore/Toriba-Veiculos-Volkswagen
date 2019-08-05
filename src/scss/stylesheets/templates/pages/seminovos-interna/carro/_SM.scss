@@ -1,0 +1,19 @@
+@media only screen and (max-width: $SM)
+{
+	.carro {
+		.owl-carousel-car {
+			img {
+				height: 175px;
+				object-fit: cover;
+			}
+		}
+	}
+	@media (orientation: landscape)
+	{
+
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

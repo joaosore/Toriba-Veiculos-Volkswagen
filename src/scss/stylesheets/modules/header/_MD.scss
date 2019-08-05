@@ -1,0 +1,96 @@
+@media only screen and (max-width: $MD)
+{
+	header {
+		.navbar-brand {
+			margin: 0;
+		}
+		#menu-svg,
+		#balao-svg {
+			pointer-events: none;
+			width: 25px;
+			height: 25px;
+		}
+		.box-btn-menu {
+			position: absolute;
+		    left: 25px;
+		    height: 25px;
+		    display: block;
+		}
+		.navbar-expand-lg {
+			.navbar-collapse {
+				position: fixed;
+				width: 100%;
+				background-color: $Brand_1;
+				left: 0;
+				height: calc(100% - 57px);
+				top: 57px;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				height: 0;
+				overflow: hidden;
+				transition: all 350ms ease-out;
+				&.open {
+				    height: calc(100% - 57px);
+				    overflow-y: scroll;
+				}
+			}
+		}
+		.navbar-expand-lg {
+			.navbar-nav {
+				position: absolute;
+				padding: 50px 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.nav-item {
+					&:first-child {
+						.nav-link {
+							font-weight: bold;
+						}
+					}
+					.nav-link {
+						font-weight: normal;
+						text-align: left;
+						cursor: pointer;
+						padding: 1.5em 5em;
+						font-size: 1.33333333333333333em;
+						color: #FFF;
+						&:hover {
+							color: #FFF;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+		}
+		.box-btn-balao {
+			position: absolute;
+			right: 25px;
+			height: 25px;
+			width: 25px;
+			display: block;
+		}
+		.bar-phones {
+			.dados {
+				.owl-item {
+					.item {
+						flex-direction: column;
+						font-size: 1em;
+					}
+				}
+			}
+		}
+	}
+	@media (orientation: landscape)
+	{
+		
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

@@ -1,0 +1,29 @@
+@media only screen and (max-width: $XS)
+{
+	.filtros {
+		.box-fintro-complexo {
+			.box-option {
+				.componet {
+					.btns-checkbox {
+						display: block;
+						width: 85%;
+						height: auto;
+						overflow-y: scroll;
+						&.scroll {
+							overflow-y: hidden;
+							height: auto;
+						}
+					}	
+				}
+			}
+		}
+	}
+	@media (orientation: landscape)
+	{
+
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

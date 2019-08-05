@@ -1,0 +1,52 @@
+.conteudo {
+    overflow: hidden;
+	p {
+		font-size: 1.25em;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.owl-carousel-conteudo {
+		.item {
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+		.thumbnail-car {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-left: 8.333333%;
+			padding-left: 45px;
+			margin-right: 8.333333%;
+			padding-right: 45px;
+			.box-img {
+				img {
+					width: 316px;
+				}
+			}
+			.box-text {
+			    padding: 0 5%;
+				h3 {
+					font-weight: 700;
+					color: #0266b3;
+					font-size: 2em;
+					height: 1.2em;
+					overflow: hidden;
+					text-transform: uppercase;
+				}
+				p {
+
+				}
+			}
+		}
+		.owl-nav {
+			button {
+				background-color: $Brand_1;
+			}
+		}
+		.owl-dots {
+			button {
+				background-color: $Brand_1;
+			}
+		}
+	}
+}

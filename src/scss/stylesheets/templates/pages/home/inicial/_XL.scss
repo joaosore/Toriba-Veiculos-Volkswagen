@@ -1,0 +1,15 @@
+.inicial {
+	padding-top: 102px !important;
+
+	.owl-carousel {
+		.owl-dots {
+			position: relative;
+			top: auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			bottom: 30px;
+			width: 100%;
+		}
+	}
+}

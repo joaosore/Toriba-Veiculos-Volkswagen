@@ -1,0 +1,180 @@
+// All styles for page template
+
+//Page Home
+	
+	//Secção Inicial
+	@import "pages/home/inicial/XL";
+	@import "pages/home/inicial/LG";
+	@import "pages/home/inicial/MD";
+	@import "pages/home/inicial/SM";
+	@import "pages/home/inicial/XS";
+
+	//Secção Universo
+	@import "pages/home/universo/XL";
+	@import "pages/home/universo/LG";
+	@import "pages/home/universo/MD";
+	@import "pages/home/universo/SM";
+	@import "pages/home/universo/XS";
+
+	//Secção Serviços
+	@import "pages/home/servicos/XL";
+	@import "pages/home/servicos/LG";
+	@import "pages/home/servicos/MD";
+	@import "pages/home/servicos/SM";
+	@import "pages/home/servicos/XS";
+
+	//Secção Seminovos
+	@import "pages/home/seminovos/XL";
+	@import "pages/home/seminovos/LG";
+	@import "pages/home/seminovos/MD";
+	@import "pages/home/seminovos/SM";
+	@import "pages/home/seminovos/XS";
+
+	//Secção Contato
+	@import "pages/home/contato/XL";
+	@import "pages/home/contato/LG";
+	@import "pages/home/contato/MD";
+	@import "pages/home/contato/SM";
+	@import "pages/home/contato/XS";
+
+//Page Zero Km
+
+	//Secção Universo
+	@import "pages/zero-km/universo/XL";
+	@import "pages/zero-km/universo/LG";
+	@import "pages/zero-km/universo/MD";
+	@import "pages/zero-km/universo/SM";
+	@import "pages/zero-km/universo/XS";
+
+//Page Zero Km Interna
+	
+	//Secção Btns
+	@import "pages/zero-km-interna/btns/XL";
+	@import "pages/zero-km-interna/btns/LG";
+	@import "pages/zero-km-interna/btns/MD";
+	@import "pages/zero-km-interna/btns/SM";
+	@import "pages/zero-km-interna/btns/XS";
+
+	//Secção Btns
+	@import "pages/zero-km-interna/conteudo/XL";
+	@import "pages/zero-km-interna/conteudo/LG";
+	@import "pages/zero-km-interna/conteudo/MD";
+	@import "pages/zero-km-interna/conteudo/SM";
+	@import "pages/zero-km-interna/conteudo/XS";
+
+	//Secção Versão
+	@import "pages/zero-km-interna/versoes/XL";
+	@import "pages/zero-km-interna/versoes/LG";
+	@import "pages/zero-km-interna/versoes/MD";
+	@import "pages/zero-km-interna/versoes/SM";
+	@import "pages/zero-km-interna/versoes/XS";
+
+	//Secção Interesses
+	@import "pages/zero-km-interna/interesses/XL";
+	@import "pages/zero-km-interna/interesses/LG";
+	@import "pages/zero-km-interna/interesses/MD";
+	@import "pages/zero-km-interna/interesses/SM";
+	@import "pages/zero-km-interna/interesses/XS";
+
+//Page Best Drive
+
+	//Secção Inicial
+	@import "pages/best-drive/experimente/XL";
+	@import "pages/best-drive/experimente/LG";
+	@import "pages/best-drive/experimente/MD";
+	@import "pages/best-drive/experimente/SM";
+	@import "pages/best-drive/experimente/XS";
+
+
+//Page Seminovos
+
+	//Secção Filtros
+	@import "pages/seminovos/filtro/XL";
+	@import "pages/seminovos/filtro/LG";
+	@import "pages/seminovos/filtro/MD";
+	@import "pages/seminovos/filtro/SM";
+	@import "pages/seminovos/filtro/XS";
+
+	//Secção Carros
+	@import "pages/seminovos/carros/CUSTOM";
+	@import "pages/seminovos/carros/XL";
+	@import "pages/seminovos/carros/LG";
+	@import "pages/seminovos/carros/MD";
+	@import "pages/seminovos/carros/SM";
+	@import "pages/seminovos/carros/XS";
+
+
+//Page Seminovos Interna
+	
+	//Secção Carros
+	@import "pages/seminovos-interna/carro/XL";
+	@import "pages/seminovos-interna/carro/LG";
+	@import "pages/seminovos-interna/carro/MD";
+	@import "pages/seminovos-interna/carro/SM";
+	@import "pages/seminovos-interna/carro/XS";
+
+//Page Consorcio
+	
+	//Secção Cotação
+	@import "pages/consorcio/cotacao/XL";
+	@import "pages/consorcio/cotacao/LG";
+	@import "pages/consorcio/cotacao/MD";
+	@import "pages/consorcio/cotacao/SM";
+	@import "pages/consorcio/cotacao/XS";
+
+//Page Venda seu carro
+	
+	//Secção Compra
+	@import "pages/venda-seu-carro/compra/XL";
+	@import "pages/venda-seu-carro/compra/LG";
+	@import "pages/venda-seu-carro/compra/MD";
+	@import "pages/venda-seu-carro/compra/SM";
+	@import "pages/venda-seu-carro/compra/XS";
+
+//Page Agende seu serviço
+	
+	//Secção Serviços 
+	@import "pages/agende-seu-servico/servico/XL";
+	@import "pages/agende-seu-servico/servico/LG";
+	@import "pages/agende-seu-servico/servico/MD";
+	@import "pages/agende-seu-servico/servico/SM";
+	@import "pages/agende-seu-servico/servico/XS";
+
+	//Secção Serviços 
+	@import "pages/agende-seu-servico/agende/XL";
+	@import "pages/agende-seu-servico/agende/LG";
+	@import "pages/agende-seu-servico/agende/MD";
+	@import "pages/agende-seu-servico/agende/SM";
+	@import "pages/agende-seu-servico/agende/XS";
+
+//Page Acessorios e Peças
+	
+	//Secção Cotação 
+	@import "pages/acessorios-e-pecas/cotacao/XL";
+	@import "pages/acessorios-e-pecas/cotacao/LG";
+	@import "pages/acessorios-e-pecas/cotacao/MD";
+	@import "pages/acessorios-e-pecas/cotacao/SM";
+	@import "pages/acessorios-e-pecas/cotacao/XS";
+
+//Page Trabalhe conosco
+	
+	//Secção Curriculo 
+	@import "pages/trabalhe-conosco/curriculo/XL";
+	@import "pages/trabalhe-conosco/curriculo/LG";
+	@import "pages/trabalhe-conosco/curriculo/MD";
+	@import "pages/trabalhe-conosco/curriculo/SM";
+	@import "pages/trabalhe-conosco/curriculo/XS";
+
+//Page Venda Direta
+	
+	//Secção Curriculo 
+	@import "pages/venda-direta/atendimento/XL";
+	@import "pages/venda-direta/atendimento/LG";
+	@import "pages/venda-direta/atendimento/MD";
+	@import "pages/venda-direta/atendimento/SM";
+	@import "pages/venda-direta/atendimento/XS";
+
+
+
+
+	

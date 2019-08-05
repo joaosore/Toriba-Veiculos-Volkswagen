@@ -1,0 +1,49 @@
+.interesses {
+	border-top: 2px solid $Brand_1;
+	border-bottom: 2px solid $Brand_1;
+	padding-top: 50px;
+	padding-bottom: 50px;
+    position: relative;
+	.owl-carousel-interesses {
+	    padding: 75px 0;
+		.box-text {
+			text-align: center;
+		}
+		.owl-nav {
+			width: calc(116.66666% + 90px);
+			left: calc(-8.33333% - 45px);
+			button {
+				background-color: $Brand_1;
+			}
+		}
+		.owl-dots {
+			position: relative;
+			button {
+				background-color: $Brand_1;
+			}
+		}
+		a {
+			transition: all 350ms ease-out;
+			text-decoration: none;
+			cursor: pointer;
+			img {
+				transition: all 350ms ease-out;
+			}
+			&:hover {
+				img {
+					opacity: 0.5;
+				}
+				.box-text {
+					p {
+						color: $Brand_1;
+					}
+				}
+			}
+		}
+	}
+	p {
+		transition: all 350ms ease-out;
+		font-weight: 700;
+		color: $NeutralDark_1;
+	}
+}

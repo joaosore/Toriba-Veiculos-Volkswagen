@@ -1,0 +1,29 @@
+@media only screen and (max-width: $MD)
+{
+	.owl-carousel-banners {
+		.owl-nav {
+			top: calc(50% - 13px);
+		    button {
+		    	&.owl-prev,
+			   	&.owl-next {
+			   		height: 26px;
+					width: 26px;
+				}
+				&.owl-prev {
+					left: 15px;
+				}
+				&.owl-next {
+					right: 15px;
+				}
+		    }
+		}
+	}
+	@media (orientation: landscape)
+	{
+		
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

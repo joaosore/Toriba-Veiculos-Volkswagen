@@ -1,0 +1,38 @@
+@media only screen and (max-width: $LG)
+{
+	.carros {
+	    overflow: hidden;
+		.lista-filtros {
+			margin: 15px 0;
+		}
+		.load-cards {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.box-car {
+			.box-btns-valor {
+				.btns {
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+				    a {
+				    	&:first-child {
+			    			margin-right: 0;
+							margin-bottom: 15px;
+				    	}
+				    }
+				}
+			}
+		}
+	}
+	@media (orientation: landscape)
+	{
+
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

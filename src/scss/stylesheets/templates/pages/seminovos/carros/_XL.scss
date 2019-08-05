@@ -1,0 +1,338 @@
+.carros {
+    padding: 100px 0;
+	.box-car {
+		border: 1px solid #0266B3;
+		border-radius: 11px;
+		height: 173px;
+		padding: 15px;
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+     	display: inline-flex;
+		.img {
+			max-width: 179px;
+			height: 100%;
+			min-width: 179px;
+			img {
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.ano_marca_modelo {
+			h3 {
+				font-size: 1.25em;
+				font-weight: bold;
+				margin: 0;
+			}
+		}
+		.versao {
+		    margin-bottom: 15px;
+			span {
+				font-size: 0.75em;	
+			}
+		}
+		.box-dados {
+		    padding: 0 30px;
+		    .dados {
+				display: flex;
+				flex-wrap: wrap;
+			    max-width: 340px;
+				.ano,
+				.km,
+				.cor,
+				.cambio {
+					position: relative;
+				    min-width: 150px;
+					span {
+						display: flex;
+						align-items: center;
+						color: $Brand_1;
+						&:before {
+							content: " ";
+							position: relative;
+							left: 0;
+							display: inline-block;
+							height: 20px;
+							width: 20px;
+							background-color: $Brand_1;
+							-webkit-mask-repeat: no-repeat;
+							-webkit-mask-position: center;
+					        -webkit-mask-size: 100%;
+				            margin-right: 5px;
+						}
+						b {
+							padding-left: 5px;
+						}
+					}
+				}
+
+				.ano {
+				    margin-bottom: 15px;
+					span {
+						&:before {
+							-webkit-mask-image: url('../imgs/ano.svg');
+							mask-image: url('../imgs/ano.svg');
+						}
+					}
+				}
+
+				.km {
+				    margin-bottom: 15px;
+					span {
+					    margin-left: 15px;
+						&:before {
+							-webkit-mask-image: url('../imgs/velocimentro.svg');
+							mask-image: url('../imgs/velocimentro.svg');
+						}
+					}
+				}
+
+				.cor {
+					span {
+						&:before {
+							-webkit-mask-image: url('../imgs/cor.svg');
+							mask-image: url('../imgs/cor.svg');
+						}
+					}
+				}
+
+				.cambio {
+					span {
+					    margin-left: 15px;
+						&:before {
+							-webkit-mask-image: url('../imgs/cambio.svg');
+							mask-image: url('../imgs/cambio.svg');
+						}
+					}
+				}
+			}
+		}
+		.box-btns-valor {
+			.valor {
+				font-size: 2em;
+				font-weight: bold;
+				color: $Brand_1;
+				text-align: center;
+				margin-bottom: 15px;
+			}
+			.btns {
+			    display: flex;
+			    a {
+			    	&:first-child {
+		    			margin-right: 15px;
+			    	}
+			    }
+			}
+		}
+	}
+	.pagination {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	    padding: 50px 0;
+		.seta {
+			cursor: pointer;
+			margin: 0 15px;
+			position: relative;
+			display: inline-block;
+			height: 2rem;
+			width: 2rem;
+			background-color: $Brand_1;
+			-webkit-mask-repeat: no-repeat;
+			-webkit-mask-position: center;
+			-webkit-mask-size: 100%;
+			-webkit-mask-image: url('../imgs/seta-pagination.svg');
+			mask-image: url('../imgs/seta-pagination.svg');
+			&.right {
+		    	transform: rotateZ(180deg);
+			}
+			&.disable {
+				background-color: #B5B5B5;
+				pointer-events: none;
+			}
+		}
+		.itens {
+		    display: flex;
+			a {
+				cursor: pointer;
+				width: 2rem;
+				height: 2rem;
+				border-radius: 100%;
+				background-color: transparent;
+				color: #B5B5B5;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-weight: bold;
+			    margin: 0 5px;
+			    &.active {
+					background-color: $Brand_1;
+					color: #fff;
+			    }
+			}
+			span {
+				display: flex;
+				align-items: center;
+				color: #B5B5B5;
+				font-weight: bold;
+			}
+		}
+	}
+	.lista-filtros {
+		background-color: #F0F0F0;
+		width: 100%;
+		max-height: 650px;
+		box-shadow: 0 2px 7px rgba(0, 0, 0, 0.16);
+		padding: 15px;
+		h4 {
+			font-size: 1.125em;
+			color: #0266B3;
+			font-weight: bold;
+		}
+		span {
+			&.link {
+				padding-top: 30px;
+				padding-bottom: 30px;
+				font-size: 1.125em;
+				color: #0266B3;
+				text-decoration: underline;
+			    display: block;
+			}
+		}
+		.box-lista {
+			display: flex;
+			flex-wrap: wrap;
+			span {
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: 1px solid #0266b3;
+				border-radius: 25px;
+				color: #0266b3;
+				padding: 5px 0 5px 10px;
+			    margin: 5px;
+			    font-weight: bold;
+				&:after {
+					content: "+";
+					width: 25px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					transform: rotateZ(45deg);
+					font-size: 1em;
+					color: #0266B3;
+					font-weight: bold;
+				}
+			}
+			&.scroll {
+				width: 100%;
+				max-height: 325px;
+				overflow-y: scroll;
+
+				/* width */
+				&::-webkit-scrollbar {
+					width: 8px;
+				}
+
+				/* Track */
+				&::-webkit-scrollbar-track {
+					background: #C1BEBE; 
+					border-radius: 5px;
+				}
+
+				/* Handle */
+				&::-webkit-scrollbar-thumb {
+					background: #047EDB; 
+					border-radius: 5px;
+				}
+
+				/* Handle on hover */
+				&::-webkit-scrollbar-thumb:hover {
+					background: #0266B3; 
+					border-radius: 5px;
+				}
+
+			}
+			.porta {
+				&:before {
+					content: " ";
+					background-color: $Brand_1;
+					-webkit-mask-repeat: no-repeat;
+					-webkit-mask-position: center;
+					-webkit-mask-size: 50%;
+					-webkit-mask-image: url('../imgs/car.svg');
+					mask-image: url('../imgs/car.svg');
+					padding-left: 30px;
+					height: 100%;
+				}
+			}
+			.km {
+				&:before {
+					content: " ";
+					background-color: $Brand_1;
+					-webkit-mask-repeat: no-repeat;
+					-webkit-mask-position: center;
+					-webkit-mask-size: 50%;
+					-webkit-mask-image: url('../imgs/velocimentro.svg');
+					mask-image: url('../imgs/velocimentro.svg');
+					padding-left: 30px;
+					height: 100%;
+				}
+			}
+			.price {
+				&:before {
+					content: " ";
+					background-color: $Brand_1;
+					-webkit-mask-repeat: no-repeat;
+					-webkit-mask-position: center;
+					-webkit-mask-size: 75%;
+					-webkit-mask-image: url('../imgs/price-tag.svg');
+					mask-image: url('../imgs/price-tag.svg');
+					padding-left: 30px;
+					height: 100%;
+				}
+			}
+			.cor {
+				&:before {
+					content: " ";
+					background-color: $Brand_1;
+					-webkit-mask-repeat: no-repeat;
+					-webkit-mask-position: center;
+					-webkit-mask-size: 50%;
+					-webkit-mask-image: url('../imgs/balde_cor.svg');
+					mask-image: url('../imgs/balde_cor.svg');
+					padding-left: 30px;
+					height: 100%;
+				}
+			}
+			.opcionais {
+				&:before {
+					content: " ";
+					background-color: $Brand_1;
+					-webkit-mask-repeat: no-repeat;
+					-webkit-mask-position: center;
+					-webkit-mask-size: 50%;
+					-webkit-mask-image: url('../imgs/star.svg');
+					mask-image: url('../imgs/star.svg');
+					padding-left: 30px;
+					height: 100%;
+				}
+			}
+			.ano {
+				&:before {
+					content: " ";
+					background-color: $Brand_1;
+					-webkit-mask-repeat: no-repeat;
+					-webkit-mask-position: center;
+					-webkit-mask-size: 50%;
+					-webkit-mask-image: url('../imgs/ano.svg');
+					mask-image: url('../imgs/ano.svg');
+					padding-left: 30px;
+					height: 100%;
+				}
+			}
+		}
+	}
+}

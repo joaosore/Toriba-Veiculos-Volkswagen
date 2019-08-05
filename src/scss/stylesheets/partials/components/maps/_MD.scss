@@ -1,0 +1,28 @@
+@media only screen and (max-width: $MD)
+{
+	.maps {
+		.box-form {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding-bottom: 30px;
+			flex-direction: column;
+			.maps {
+				margin-bottom: 25px;
+				width: 100%;
+				input,
+				select {
+					width: 100%;
+				}
+			}
+		}
+	}
+	@media (orientation: landscape)
+	{
+		
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

@@ -1,0 +1,21 @@
+.consorcio {
+    padding-top: 109px;
+	padding-bottom: 50px;
+    overflow: hidden;
+	.loading {
+	    top: 5px;
+		svg {
+			circle {
+				stroke: $Brand_1;
+			}
+		}
+	}
+	.box-voltar {
+		display: none;
+		.voltar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}

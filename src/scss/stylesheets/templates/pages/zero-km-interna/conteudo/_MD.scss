@@ -1,0 +1,51 @@
+@media only screen and (max-width: $MD)
+{
+	.conteudo {
+		.owl-carousel-conteudo {
+			.thumbnail-car {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				margin: 0;
+			    padding: 0 45px;
+			    .box-img {
+					img {
+						width: 100%;
+					}
+				}
+				.box-text {
+					padding: 0;
+					p {
+						padding: 0;
+					}
+					h3 {
+						text-align: center;
+						margin-top: 1em;
+						margin-bottom: 1em;
+					}
+				}
+			}
+			.owl-nav {
+				button {
+					height: 26px;
+					width: 26px;
+					&.owl-prev {
+						left: 0
+					}
+					&.owl-next {
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+	@media (orientation: landscape)
+	{
+		
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

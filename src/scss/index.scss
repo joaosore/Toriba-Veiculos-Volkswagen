@@ -1,0 +1,39 @@
+// Bootstrap
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+/*     This file is working like main.scss in structure    */
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+//DatePiker
+@import "../../node_modules/js-datepicker/dist/datepicker.min.css";
+
+//Owl Carrossel
+@import "../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css";
+
+//Animate
+@import "../../node_modules/animate.css/animate.min.css";
+
+//Jquery Range
+@import "../../node_modules/jquery-range/jquery.range.css";
+
+//Custom Selec
+@import '../../node_modules/custom-select/build/custom-select.css';
+
+// Defining Variables
+@import "src/scss/stylesheets/modules/tools";
+@import "src/scss/stylesheets/modules/variables";
+@import "src/scss/stylesheets/modules/responsive-font";
+//Componentes
+@import "src/scss/stylesheets/partials/components";
+
+// Theme Configurations
+@import "src/scss/fonts/stylesheet";
+@import "src/scss/stylesheets/partials/buttons";
+@import "src/scss/stylesheets/partials/typography";
+
+// Page Templates
+@import "src/scss/stylesheets/templates/post";
+@import "src/scss/stylesheets/templates/page";
+
+// Theme Styles
+@import "src/scss/stylesheets/theme-styles";

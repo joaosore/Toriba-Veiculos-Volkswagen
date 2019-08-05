@@ -1,0 +1,89 @@
+.maps {
+	padding-top: 60px;
+	padding-bottom: 80px;
+	h2 {
+		font-weight: bold;
+		font-size: 2.5em;
+		color: $NeutralDark_1;
+	    text-align: center;
+	    padding-bottom: 1.875rem;
+	}
+	.box-form {
+		display: flex;
+	    align-items: flex-end;
+		justify-content: center;
+		padding-bottom: 30px;
+		.maps {
+			position: relative;
+		    padding: 0 8px;
+			&:before {
+				content: "";
+				height: 100%;
+				position: absolute;
+				width: 25px;
+				background-color: $Brand_2;
+				-webkit-mask-image: url('../imgs/pin_1_.svg');
+				mask-image: url('../imgs/pin_1_.svg');
+				-webkit-mask-repeat: no-repeat;
+				-webkit-mask-position: center;
+			}
+			&.select-maps {
+				&:after {
+					content: "";
+					background-color: $Brand_2;
+					-webkit-mask-image: url('../imgs/seta-select.svg');
+					mask-image: url('../imgs/seta-select.svg');
+				    width: 10px;
+					height: 8px;
+					position: absolute;
+					top: calc(50% - 7.5px);
+					right: 15px;
+					pointer-events: none;
+			    }
+			}
+		}
+		input {
+		    min-width: 242px;
+			color: $NeutralDark_1;
+			padding-left: 23px;
+			border: none;
+			border-bottom: 1px solid $NeutralDark_2;
+			&::placeholder { /* Firefox, Chrome, Opera */ 
+				color: $NeutralDark_1; 
+			} 
+			&:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+				color: $NeutralDark_1; 
+			} 
+			&::-ms-input-placeholder { /* Microsoft Edge */ 
+				color: $NeutralDark_1; 
+			} 
+			&.error {
+		    	border-bottom: 1px solid red;
+			}
+		}
+		select {
+		    min-width: 242px;
+			color: $NeutralDark_1;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			text-indent: 1px;
+			text-overflow: '';
+		    background-color: transparent;
+			border: 0;
+			border-bottom: 1px solid $NeutralDark_2;
+			border-radius: 0;
+			padding-left: 23px;
+		    height: 27px;
+		    &.error {
+		    	border-bottom: 1px solid red;
+			}
+		}
+		.btn-rota,
+		.sair-mapa {
+			padding: 0 10px;
+		}
+		.sair-mapa {
+			display: none;
+		}
+	}
+}

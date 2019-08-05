@@ -1,0 +1,67 @@
+@media only screen and (max-width: $XS)
+{
+	.carros {
+	    padding: 0;
+		.box-car {
+			.box-dados {
+			    padding: 0;
+		        width: 100%;
+			    .dados {
+					max-width: 400px;
+					margin: auto;
+					padding: 50px 0;
+					align-items: center;
+					justify-content: center;
+					width: auto;
+					.ano {
+				   		margin-bottom: 15px;
+					}
+
+					.km {
+					    margin-bottom: 15px;
+						span {
+						    margin-left: 0;
+						}
+					}
+
+					.cor {
+						margin-bottom: 15px;
+					}
+
+					.cambio {
+						span {
+						    margin-left: 0;
+						}
+					}
+				}
+			}
+			.box-btns-valor {
+				.valor {
+					font-size: 2em;
+					font-weight: bold;
+					color: $Brand_1;
+					text-align: center;
+					margin-bottom: 15px;
+				}
+				.btns {
+				    display: flex;
+				    flex-direction: column;
+				    a {
+				    	&:first-child {
+			    			margin-right: 0;
+			    			margin-bottom: 15px;
+				    	}
+				    }
+				}
+			}
+		}
+	}
+	@media (orientation: landscape)
+	{
+
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

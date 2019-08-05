@@ -1,0 +1,16 @@
+@media only screen and (max-width: $MD)
+{
+	label {
+		&#mensagem-error {
+			bottom: 23px;
+		}
+	}
+	@media (orientation: landscape)
+	{
+		
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

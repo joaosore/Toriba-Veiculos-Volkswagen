@@ -1,0 +1,22 @@
+@media only screen and (max-width: $XS)
+{
+	header {
+	    .navbar-expand-lg {
+			.navbar-nav {
+				height: auto;
+				display: flex;
+				align-items: flex-start;
+				justify-content: center;
+			}
+		}
+	}
+
+	@media (orientation: landscape)
+	{
+
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

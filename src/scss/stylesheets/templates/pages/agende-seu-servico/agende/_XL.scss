@@ -1,0 +1,64 @@
+.agende {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	.box-numeros {
+		display: flex;
+		flex-direction: column;
+		.telefone {
+			position: relative;
+		    padding-left: calc(2rem * 1.5);
+		    margin: .25em;
+		    color: $Brand_1;
+		    font-size: 2rem;
+			&:before {
+				content: " ";
+				position: absolute;
+				left: 0;
+				width: 2rem;
+				height: 100%;
+				background-color: $Brand_1;
+				-webkit-mask-image: url('../imgs/telefone.svg');
+				mask-image: url('../imgs/telefone.svg');
+				-webkit-mask-repeat: no-repeat;
+				-webkit-mask-position: center;
+			    -webkit-mask-size: 1.5rem;
+			}
+		}
+		.whatsapp {
+			position: relative;
+		    padding-left: calc(2rem * 1.5);
+		    margin: .25em;
+		    color: $Brand_1;
+		    font-size: 2rem;
+			&:before {
+				content: " ";
+				position: absolute;
+				left: 0;
+				width: 2rem;
+				height: 100%;
+				background-color: $Brand_1;
+				-webkit-mask-image: url('../imgs/whatsapp.svg');
+				mask-image: url('../imgs/whatsapp.svg');
+				-webkit-mask-repeat: no-repeat;
+				-webkit-mask-position: center;
+			    -webkit-mask-size: 1.5rem;
+			}
+		}
+	}
+	.loading {
+	    top: 5px;
+		svg {
+			circle {
+				stroke: $Brand_1;
+			}
+		}
+	}
+	.box-voltar {
+		display: none;
+		.voltar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
