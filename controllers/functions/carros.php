@@ -2,7 +2,7 @@
 
 // //Cria o Post Destaques
 // function create_carros_post_types() {
-//     register_post_type( 'carros',
+//     register_post_type( 'carros',/Users/joaomarcossoredemorais/Projetos/Toriba-Veiculos-Volkswagen/controllers/functions/carros.php
 //         array(
 //             'labels' => array(
 //                 'name' => __( 'Carros' ),

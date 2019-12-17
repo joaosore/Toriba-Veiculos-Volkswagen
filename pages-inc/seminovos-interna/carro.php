@@ -20,16 +20,16 @@
 				<div class="box-dados">
 					<div class="dados">
 						<div class="ano">
-							<span>Ano: <b>2017/2018</b></span>
+							<span>Ano: <b><?php echo get_seminovo_interna(get_the_ID())['ano_fabricacao']; ?>/<?php echo get_seminovo_interna(get_the_ID())['ano_modelo']; ?></b></span>
 						</div>
 						<div class="cor">
-							<span>Cor: <b>Vermelho</b></span>
+							<span>Cor: <b><?php echo get_seminovo_interna(get_the_ID())['cor']; ?></b></span>
 						</div>
 						<div class="km">
-							<span>KM: <b>94,200</b></span>
+							<span>KM: <b><?php echo get_seminovo_interna(get_the_ID())['km']; ?></b></span>
 						</div>
 						<div class="cambio">
-							<span>Câmbio: <b>Manual</b></span>
+							<span>Câmbio: <b><?php echo get_seminovo_interna(get_the_ID())['cambio']; ?></b></span>
 						</div>
 					</div>
 

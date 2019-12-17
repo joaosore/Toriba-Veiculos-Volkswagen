@@ -116,14 +116,6 @@ Barba.Dispatcher.on("transitionCompleted", function(
   oldStatus,
   container
 ) {
-  startRecaptcha("Formulario-Flutuante");
-  startMask();
-  init_eventos_formulario_flutuante();
-  init_submit_formulario_flutuante();
-  init_validade_formulario_flutuante();
-  menu_active();
-  init_animate_footer();
-  init_btn_cotacao_seguro();
   $(".loading").fadeOut();
 });
 
