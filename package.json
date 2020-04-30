@@ -32,7 +32,7 @@
     "grunt-purifycss": "^0.1.2",
     "html-webpack-plugin": "^3.2.0",
     "i": "^0.3.6",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "jquery-lazy": "^1.7.10",
     "jquery-mask-plugin": "^1.14.15",
     "jquery-range": "^1.0.0",
