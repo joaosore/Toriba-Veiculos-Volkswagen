@@ -36,7 +36,7 @@
     "jquery-lazy": "^1.7.10",
     "jquery-mask-plugin": "^1.14.15",
     "jquery-range": "^1.0.0",
-    "jquery-validation": "^1.19.0",
+    "jquery-validation": "^1.19.4",
     "js-datepicker": "^4.0.10",
     "lazysizes": "^4.1.6",
     "modernizr": "^3.6.0",
